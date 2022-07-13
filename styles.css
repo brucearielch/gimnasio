@@ -171,7 +171,11 @@ body {
   }
 }
 
-/* Header */
+a {
+  text-decoration: none;
+  color: #e7e7e7;
+}
+/* Header 
 
 body {
   font-family: Helvetica;
@@ -226,10 +230,10 @@ li {
   display: inline-block;
   margin: 1.4em 1em 1em 1em;
 }
-
 .containerImagen {
   display: flex;
 }
+*/
 
 .imagenHorario {
   flex-shrink: 0;
@@ -270,6 +274,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 /*Formulario*/
@@ -333,7 +338,7 @@ textarea {
 }
 
 /* Boton Form Animación */
-button {
+.BotonAnimado {
   padding: 15px 40px;
   background: #ea6c36;
   border: 0;
@@ -349,8 +354,8 @@ button {
   margin: 0 auto;
 }
 
-button::after,
-button::before {
+.BotonAnimado::after,
+.BotonAnimado::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -360,7 +365,7 @@ button::before {
   transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-button::after {
+.BotonAnimado::after {
   width: 30px;
   height: 1px;
   background: white;
@@ -368,7 +373,7 @@ button::after {
   margin-top: 0px;
 }
 
-button::before {
+.BotonAnimado::before {
   content: "";
   transform: rotate(-135deg) translateX(50%);
   width: 11px;
@@ -380,12 +385,12 @@ button::before {
 }
 
 
-button:hover {
+.BotonAnimado:hover {
   padding: 15px 60px 15px 20px;
 }
 
-button:hover::after,
-button:hover::before {
+.BotonAnimado:hover::after,
+.BotonAnimado:hover::before {
   opacity: 1;
   right: 15px;
 }
