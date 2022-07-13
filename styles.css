@@ -401,7 +401,7 @@ button:hover::before {
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
-*/
+
 @keyframes scale {
   100% {
     transform: scale(1);
