@@ -9,10 +9,18 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<!--Form-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></script>
+
 	<!-- CSS-->
 	<link rel="stylesheet" href="../styles.css">
 	<title>Contacto</title>
 </head>
+
 <body>
 	<header>
 		<nav class="navbar navbar-inverse">
@@ -63,27 +71,19 @@
 				</div>
 			</section>
 			<section>
-				<div class="Formulario">
-					<h2>Formulario de Contacto</h2>
-					<form action="">
-						<div>
-							<label for="Nombre">Nombre</label>
-							<input type="text" placeholder="Ingrese su nombre" id="Nombre">
-						</div>
-						<div>
-							<label for="Email">Email</label>
-							<input type="mail" placeholder="Ingrese su email" id="Email">
-						</div>
-						<div>
-							<label for="mensaje">Dejanos tu mensaje</label>
-							<textarea id="mensaje" placeholder="Dejanos tu mensaje"> </textarea>
-						</div>
-						<div>
-							<button class="BotonAnimado">Enviar</button>
-						</div>
-					</form>
-				</div>
-			</section>
+			<div class="Formulario">
+				<form id="contactus" action="" method="post">
+					<h3>Contactanos</h3>
+					<fieldset> <input placeholder="Nombre" type="text" tabindex="1" required autofocus> </fieldset>
+					<fieldset> <input placeholder="Correo Electrónico" type="email" tabindex="2" required> </fieldset>
+					<fieldset> <input placeholder="Número de Teléfono" type="tel" tabindex="3" required> </fieldset>
+					<fieldset> <textarea placeholder="Ingresa tu mensaje" tabindex="5" required></textarea>
+					</fieldset>
+					<fieldset> <button name="submit" type="submit" id="contactus-submit" data-submit="...Enviando"><i
+								id="icon" class=""></i> Enviar</button> </fieldset>
+				</form>
+			</div>
+		</section>
 		</div>
 	</main>
 </body>
