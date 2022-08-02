@@ -1,0 +1,253 @@
+/* Cards Generales */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+    background-color: #e7e7e7;
+  }
+  
+  .card {
+    flex-wrap: wrap;
+    margin: 10px;
+    border: 1px solid #e7e7e7;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card img {
+    max-width: 100%;
+  }
+  
+  .card .text {
+    padding: 0 20px 20px;
+  }
+  
+  .card .text>button {
+    background: #ea6c36;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  /* Cards para Tarifas */
+  .cardsTarifa {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+    background-color: #e7e7e7;
+  }
+
+  .cardTarifa {
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid #e7e7e7;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  }
+  .cardTarifa img {
+    max-width: 100%;
+  }
+  
+  .cardTarifa .text {
+    padding: 0 20px 20px;
+  }
+  
+  .cardTarifa .text>button {
+    background: #ea6c36;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, Sans-serif;
+    background-color: #e7e7e7;
+  }
+  
+  /* Cards con Grid / Index*/
+  
+  .cardsIndex {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background-color: #e7e7e7;
+  }
+  
+  .cardIndex {
+    justify-content: center;
+    margin: 10px;
+    border: 1px solid #e7e7e7;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cardIndex img {
+    max-width: 100%;
+  }
+  
+  .cardIndex .text {
+    padding: 0 20px 20px;
+  }
+  
+  .cardIndex .text>button {
+    background: #ea6c36;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* FOOTER */
+  .footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #9a5131;
+  }
+  
+  .footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+  }
+  
+  .footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: #e7e7e7;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+  }
+  
+  .footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer .col ul li {
+    color: #e7e7e7;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+  }
+  
+  .social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+  }
+  
+  .footer .col ul li:hover {
+    color: #e7e7e7;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+  }
+  
+  .clearfix {
+    clear: both;
+  }
+  
+  @media only screen and (min-width: 1280px) {
+    .contain {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .footer .col {
+      width: 33%;
+    }
+  
+    .footer .col h1 {
+      font-size: 14px;
+    }
+  
+    .footer .col ul li {
+      font-size: 13px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+  
+    .footer .col {
+      width: 50%;
+    }
+  
+    .footer .col h1 {
+      font-size: 14px;
+    }
+  
+    .footer .col ul li {
+      font-size: 13px;
+    }
+  }
+  
+  /* Etiquetas */
+  a {
+    text-decoration: none;
+    color: #e7e7e7;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+  
+  h3 {
+    font-size: 25px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  h6 {
+    font-size: 22px;
+  }
+  
+  .banner h1,
+  .banner h3,
+  .banner h6 {
+    margin: 0;
+    text-shadow: 2px 2px 6px #000;
+    text-align: center;
+  }
+  
+  .banner {
+    color: white;
+    background: url(../Imagenes/cover.jpg) top left/cover no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .imagenHorario {
+    flex-shrink: 0;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
