@@ -34,23 +34,26 @@
   .cardsTarifa {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items:stretch;
     justify-content: space-evenly;
+    text-align: center;
     background-color: #e7e7e7;
   }
 
   .cardTarifa {
-    flex: 0 0 200px;
+    flex-wrap:wrap;
     margin: 10px;
     border: 1px solid #e7e7e7;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   }
   .cardTarifa img {
     max-width: 100%;
+    margin: auto;
   }
   
   .cardTarifa .text {
     padding: 0 20px 20px;
+    
   }
   
   .cardTarifa .text>button {
@@ -87,6 +90,7 @@
   
   .cardIndex img {
     max-width: 100%;
+    margin: 20px;
   }
   
   .cardIndex .text {

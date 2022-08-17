@@ -196,13 +196,18 @@
 
 .infoContacto {
   margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 10px;
   word-wrap: break-word;
   background-color: #f0f0f0;
 }
 
 .Formulario {
-  width: 350px;
+  width: 0 auto;
   margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 0 auto;
+  margin-bottom: 10px;
   background-color: #f0f0f0;
 }
 
@@ -227,14 +232,14 @@
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
-  position: relative;
+  position: fixed;
 }
 
 #contactus {
   font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
   background: #F9F9F9;
   padding: 25px;
-  margin: 150px 0;
+  margin-top: 25px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -367,11 +372,12 @@ fieldset {
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: space-evenly;
+  text-align: center;
   background-color: #e7e7e7;
 }
 
 .cardTarifa {
-  flex: 0 0 200px;
+  flex-wrap: wrap;
   margin: 10px;
   border: 1px solid #e7e7e7;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
@@ -379,6 +385,7 @@ fieldset {
 
 .cardTarifa img {
   max-width: 100%;
+  margin: auto;
 }
 
 .cardTarifa .text {
@@ -418,6 +425,7 @@ body {
 
 .cardIndex img {
   max-width: 100%;
+  margin: 20px;
 }
 
 .cardIndex .text {
